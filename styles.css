@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    background: linear-gradient(132deg, blue, purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 5px;
+}
+
+[st] {
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px 0;
+    padding: 5px;
+}
+
+
+.grid {
+    width: 301px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes {
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    border: 1px solid ;
+    border-radius: 5px;
+}
+
+.mol {
+    background-image: url("mole.png");
+    background-size: cover;
+    background-position: 44%;
+
+}
+
+.pause, .start {
+    margin: 10px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    background: transparent;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.no-click {
+    cursor: not-allowed;
+    color: gray;
+}
+
+.no-display {
+    display: none !important;
+}
