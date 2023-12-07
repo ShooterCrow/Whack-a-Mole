@@ -59,7 +59,7 @@ function move() {
   score.textContent = scoreCount;
 
   // Set intervals for moving mole and updating timer
-  moeMoveInterval = setInterval(moveMol, 2000);
+  moeMoveInterval = setInterval(moveMol, 1000);
   timerInterval = setInterval(() => {
     timer--;
     time.textContent = timer;
@@ -97,80 +97,3 @@ start.addEventListener("click", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let started
-// let currentPosition
-// let timerId = null
-// let currentTime = 10
-// let userScore = 0
-
-// function randomBoxSelector () {
-//     boxes.forEach((x) => {
-//         x.classList.remove("mol")
-//     })
-
-
-//     let randomBox = boxes[Math.floor(Math.random() * 9)]
-//     randomBox.classList.add("mol")
-//     currentPosition = randomBox.id
-    
-
-//     started = true
-// }
-
-// boxes.forEach((x) => x.addEventListener("mousedown", () => {
-//     let yy = 0
-//     console.log(currentPosition)
-//     userScore++
-//     if (x.id == currentPosition)
-//     yy++
-//     score.textContent = userScore
-//     console.log(x.id, currentPosition)
-//     currentPosition = null
-//     console.log(yy)
-// }))
-
-// function moveMol () {
-    
-//     if (!(started)) {
-//         timerId = setInterval(randomBoxSelector, 1000)
-//     }
-
-//     // start.removeEventListener("click", moveMol)
-// }
-
-// start.addEventListener("click", () => {
-//     moveMol()
-//     currentTimeId = setInterval(countDown, 1000)
-// })
-// let currentTimeId
-// function countDown () {
-//     currentTime--
-//     time.textContent = currentTime
-//     if (currentTime === 0) {
-//         alert("Jame Over your score is " + userScore)
-//         clearInterval(currentTimeId)
-//         clearInterval(timerId)
-//         return
-//     }
-// }
