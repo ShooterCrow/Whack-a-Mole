@@ -48,6 +48,7 @@ boxes.forEach((x) => x.addEventListener("click", () => {
       clear();
       start.classList.remove("no-click");
       start.addEventListener("click", move);
+      startJame = false
     }
   }
 }));
@@ -69,6 +70,7 @@ function move() {
       alert("Game Over, Your Score is " + scoreCount);
       clear();
       start.classList.remove("no-click");
+      startJame = false
     }
   }, 1000);
 
@@ -84,10 +86,15 @@ function move() {
 
 // Event listener for starting the game
 start.addEventListener("click", () => {
-  move();
-  lvlDisplay.classList.remove("no-display");
-  currentlvl = 1;
-  lvlDisplayCount.textContent = currentlvl;
+
+  if (!startJame) {
+    move();
+    lvlDisplay.classList.remove("no-display");
+    currentlvl = 1;
+    lvlDisplayCount.textContent = currentlvl;
+  }
+
+  startJame = true
 });
 
 
