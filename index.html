@@ -8,29 +8,26 @@
 </head>
 <body>
     <div class="container">
-
-        <div class="stat">
+        <div mole-pic>
+            <img width="400px" mole-pic src="mole.png" alt="">
+            <h2>Whack a <span mole-txt>Mole</span></h2>
+        </div>
+        <div class="stat no-display">
                <h3 st>Your Score: <span id="score">0</span></h3>
                <h3 st>Time: <span id="time">60</span></h3>
                <h3 st class="lvlDisplay no-display">Lvl: <span id="lvlDisplayCount"></span></h3>
         </div>
     
-        <div class="grid">
-            <div class="boxes" id="1"></div>
-            <div class="boxes" id="2"></div>
-            <div class="boxes" id="3"></div>
-            <div class="boxes" id="4"></div>
-            <div class="boxes" id="5"></div>
-            <div class="boxes" id="6"></div>
-            <div class="boxes" id="7"></div>
-            <div class="boxes" id="8"></div>
-            <div class="boxes" id="9"></div>
+        <div class="grid no-display">
         </div>
-        <div class="pay-pause">
-            <button class="start">Start</button>
-            <!-- <button class="pause">Pause</button> -->
+        <div class="pop-up no-display">
+            <p class="n-l-i">Next level in <span class="t-left">12</span></p>
+            <img width="100px" src="mole.png" alt="">
+            <h3 pop-up-txt>Winner winner cicen dinner</h3>
+            <button class="next">Next</button>
+        </div>
+        <button class="start">Start</button>
 
-        </div>
 
     </div>
     <script src="script.js"></script>
